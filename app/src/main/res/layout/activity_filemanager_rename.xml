@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/filemanage_rename_title"
+        layout="@layout/toolbar"/>
+
+    <EditText
+        android:id="@+id/filemanage_rename_newname"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/filemanage_rename_title"
+        android:layout_marginTop="12dp"
+        android:paddingLeft="12dp"
+        android:hint="输入文件名"
+        android:singleLine="true"
+        android:maxLines="1"
+        android:background="@drawable/base_edittext_border"
+        android:textSize="14dp"/>
+
+
+</RelativeLayout>

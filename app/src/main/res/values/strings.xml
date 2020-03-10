@@ -1,0 +1,193 @@
+<resources>
+    <string name="app_name">宝得系统客户端</string>
+    <string name="user_name">用户账户：</string>
+    <string name="user_pass">用户口令：</string>
+    <string name="add">添加</string>
+    <string name="bid">竞价</string>
+    <string name="cancel">取消</string>
+    <string name="welcome">欢迎使用宝得ERP系统</string>
+    <string name="view_succ">浏览竞得物品</string>
+    <string name="view_bid">您参与竞标的物品</string>
+    <string name="view_fail">浏览流拍物品</string>
+    <string name="manage_item">您当前的拍卖物品</string>
+    <string name="manage_kind">系统的所有物品种类</string>
+    <string name="choose_kind">请选择一个物品种类</string>
+    <string name="item_list">当前种类的物品</string>
+    <string name="item_name">物品名：</string>
+    <string name="item_kind">物品种类：</string>
+    <string name="item_desc">物品描述：</string>
+    <string name="win_price">赢取价格：</string>
+    <string name="max_price">最高竞价：</string>
+    <string name="remark">物品备注：</string>
+    <string name="init_price">起拍价格：</string>
+    <string name="avail_time">有效时间：</string>
+    <string name="end_time">结束时间：</string>
+    <string name="bid_price">竞标价格：</string>
+    <string name="bid_time">竞标时间：</string>
+    <string name="bid_user">竞标人：</string>
+    <string name="add_kind_title">添加物品种类</string>
+    <string name="add_item_title">添加拍卖物品</string>
+    <string name="kind_name">种类名称：</string>
+    <string name="kind_desc">种类描述：</string>
+    <string name="item_detail_title">物品详情</string>
+    <string name="you_bid">您的竞价：</string>
+    <string name="txt_org_efficiency">组织效率</string>
+    <string name="txt_recommend_friend">向我推荐通讯录朋友</string>
+    <string name="txt_talk_efficiency">沟通效率</string>
+    <string name="txt_work_efficiency">协同效率</string>
+    <string name="score">分</string>
+    <!-- 网络请求提示 -->
+    <string name="net_not_connected">发送请求失败，请检查网络连接</string>
+    <string name="net_server_connected_error">连接服务器失败，请稍后重试</string>
+    <string name="net_server_error">服务器处理请求失败，请稍后重试</string>
+    <string name="net_server_param_error">应用数据出错，请刷新重试</string>
+    <string name="net_unknown_error">未知错误，请稍后重试</string>
+
+    <!-- 文件管理 使用的字段 -->
+    <string name="my_disk">我的网盘</string>
+    <string name="my_file">个人文件</string>
+    <string name="shared_file">群文件</string>
+    <string name="edit">编辑</string>
+    <string name="newfolder">新建文件夹</string>
+    <string name="allselect">全选</string>
+    <string name="allnoneselect">取消全选</string>
+    <string name="move">移动</string>
+    <string name="delete">删除</string>
+    <string name="rename">重命名</string>
+    <string name="system_file">系统文件</string>
+    <string name="folder">文件夹</string>
+    <string name="move_to_dir">移动至当前目录</string>
+    <string name="select_target_dir">请选择目标目录</string>
+
+    <string name="shareto">发送给联系人</string>
+
+    <string name="back_button">返回</string>
+    <string name="complete">完成</string>
+    <string name="upload">上传</string>
+    <string name="upload_selectfile">选择要上传文件</string>
+    <string name="fm_group_head">用户加入群组</string>
+    <string name="user_not_have_group">用户暂未加入群组</string>
+
+    <!--Login 使用字段 -->
+    <string name="login">登  录</string>
+    <string name="link_sign_up">注册账号</string>
+    <string name="link_forget_password">忘记密码</string>
+    <string name="sign_up">立即注册</string>
+    <string name="link_logon">立即已经创建账号,请注册注册</string>
+    <string name="input_password">请输入密码</string>
+    <string name="input_user_name">请输入用户名</string>
+    <string name="input_phone">请输入手机号</string>
+    <string name="input_vercode">请输入验证码</string>
+
+    <!--main 使用字段 -->
+    <string name="message">消息</string>
+    <string name="notice">公告</string>
+    <string name="work">工作</string>
+    <string name="contact">联系人</string>
+    <string name="my">我的</string>
+
+    <!--contact 使用字段 -->
+    <string name="gsonFriends">好友</string>
+    <string name="add_friend">添加好友</string>
+    <string name="group">我的群组</string>
+    <string name="create_group">创建群</string>
+    <string name="personal_contact">手机通讯录</string>
+    <string name="public_contact">公共通讯录</string>
+    <string name="search_by_phone">通过手机号搜索</string>
+    <string name="add_by_contact">通过手机通讯录添加</string>
+    <string name="input_group_name">输入群名称</string>
+    <string name="commit">提交</string>
+    <string name="confirm">确定</string>
+    <string name="frequently_friend">常用联系人</string>
+
+    <!--notice 使用字段 -->
+    <string name="send_notice">发公告</string>
+    <string name="send">发送</string>
+    <string name="notice_title">公告标题</string>
+    <string name="author">作者</string>
+    <string name="notice_content">公告内容</string>
+    <string name="read">已读</string>
+    <string name="unread">未读</string>
+    <string name="press_back_again_to_exit">再按一次退出</string>
+
+    <!--work 使用字段 -->
+    <string name="office_management">内勤管理</string>
+    <string name="report">业务汇报</string>
+    <string name="office_communication">办公通讯</string>
+    <string name="sign_in">打卡</string>
+    <string name="leave">请假</string>
+    <string name="go_out">外出</string>
+    <string name="business_trip">出差</string>
+    <string name="work_overtime">加班</string>
+    <string name="day_report">日报</string>
+    <string name="week_report">周报</string>
+    <string name="month_report">月报</string>
+    <string name="video_meeting">视频会议</string>
+    <string name="cloud_disk">云盘</string>
+    <string name="please_input">请填写文字</string>
+    <string name="work_finish">已完成的工作:</string>
+    <string name="work_unfinsh">未完成的工作:</string>
+    <string name="work_concert">需协调的工作:</string>
+    <string name="send_to">发给谁</string>
+    <string name="ps">备注</string>
+    <string name="add_people">添加人员</string>
+
+    <!--内外勤管理使用字段-->
+    <string name="leavetype">请假类型</string>
+    <string name="travel_location">出差地点</string>
+    <string name="travel_location_hint">如：北京、上海、广州(必填)</string>
+    <string name="startdate">开始日期</string>
+    <string name="starttime">开始时间</string>
+    <string name="enddate">结束日期</string>
+    <string name="endtime">结束时间</string>
+    <string name="duration">时长(天)</string>
+    <string name="leave_reason">请假事由</string>
+    <string name="leave_reason_hint">请填写请假事由(必填)</string>
+    <string name="goout_reason">外出事由</string>
+    <string name="goout_reason_hint">请填写外出事由(必填)</string>
+    <string name="travel_reason">出差事由</string>
+    <string name="travel_reason_hint">请填写出差事由(必填)</string>
+    <string name="overtime_reason">加班事由</string>
+    <string name="overtime_reason_hint">请填写加班事由(必填)</string>
+    <string name="photo">图片</string>
+    <string name="approver">审批人</string>
+
+    <string name="thing_leave">事假</string>
+    <string name="year_leave">年假</string>
+    <string name="change_rest">调休</string>
+    <string name="sick_leave">病假</string>
+    <string name="marriage_leave">婚假</string>
+    <string name="maternity_leave">产假</string>
+    <string name="official_leave">例假</string>
+    <string name="funeral_leave">丧假</string>
+
+
+    <!--userInfo-->
+    <string name="user_info"> 个人信息</string>
+    <string name="qr_code">二维码名片</string>
+    <string name="change_password">修改密码</string>
+    <string name="sign_out">退出登录</string>
+    <string name="setting">设置</string>
+    <!--  jxc  -->
+    <string name="jxc_management">备件管理</string>
+    <string name="jxc_vouch_scan_in">入库</string>
+    <string name="jxc_vouch_scan_out">出库</string>
+    <string name="jxc_vouch_checked">审核</string>
+    <string name="jxc_vouch">请购</string>
+    <string name="energy_managment">能源管理</string>
+    <string name="energy_realdata">实时数据</string>
+    <string name="energy_product">产量</string>
+    <string name="energy_point">指标</string>
+    <string name="energy_energy">工序能耗</string>
+    <string name="vouch_code">单据号</string>
+    <string name="vouch_type">业务类型</string>
+    <string name="vouch_user">申请人</string>
+    <string name="vouch_dep">申请部门</string>
+    <string name="vouch_data">申请日期</string>
+    <string name="vouch_items">订单存货信息</string>
+    <string name="vouch_maker">仓库</string>
+    <string name="safe_keyboard">加密键盘</string>
+    <string name="mLabelTextSize">mLabelTextSize</string>
+    <string name="keyboard_key1"><![CDATA[\"&#64;\"]]></string>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWhite"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    >
+
+    <cn.refactor.library.SmoothCheckBox
+        android:id="@+id/checkbox_contact"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        app:color_checked="@color/colorLightBlue"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_image"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="10dp"/>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_contact"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:sUseRipple="true"
+      >
+    </com.allen.library.SuperTextView>
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/searchBtn"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="first"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/message_fragment_more"
+        android:icon="@drawable/ic_add_white_24dp"
+        android:title="more"
+        app:showAsAction="always">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/scan"
+                    android:icon="@drawable/scan"
+                    android:title="扫一扫"
+                    app:showAsAction="ifRoom"
+                    />
+                <item
+                    android:id="@+id/multiChat"
+                    android:icon="@drawable/group"
+                    android:title="发起群聊"
+                    app:showAsAction="ifRoom"/>
+                <item
+                    android:id="@+id/addFriend"
+                    android:icon="@drawable/addpeople"
+                    android:title="添加好友"
+                    app:showAsAction="ifRoom"/>
+                <item
+                    android:id="@+id/cloud"
+                    android:icon="@drawable/cloudpan"
+                    android:title="云盘"
+                    app:showAsAction="ifRoom"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>

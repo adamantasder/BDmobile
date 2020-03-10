@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.khaki.jxc.activity.AddFriendActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_search_friend"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:sLeftIconRes="@mipmap/ic_search"
+        app:sLeftIconWidth="45dp"
+        app:sLeftIconHeight="45dp"
+        app:sLeftTextString="@string/search_by_phone"
+        app:sUseRipple="true"
+      >
+    </com.allen.library.SuperTextView>
+
+    <com.allen.library.SuperTextView
+        android:id="@+id/st_add_friend"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        app:sLeftIconRes="@mipmap/icon_contact_local"
+        app:sLeftIconWidth="45dp"
+        app:sLeftIconHeight="45dp"
+        app:sLeftTextString="@string/add_by_contact"
+        app:sUseRipple="true"
+
+     >
+    </com.allen.library.SuperTextView>
+</LinearLayout>

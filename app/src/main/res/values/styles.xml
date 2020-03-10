@@ -1,0 +1,139 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorLightBlue</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back_white_24dp</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+
+
+    <style name="AppTheme.StartingWindowTheme">
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@drawable/welcom_bg</item>
+
+    </style>
+    <style name="tv_show">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:background">@drawable/tv_bg</item>
+    </style>
+
+
+    <style name="MyEditText" parent="Theme.AppCompat.Light">
+        <!-- AppCompatEditText默认状态状态设置底线颜色 -->
+        <item name="colorControlNormal">@color/colorWhite</item>
+        <!-- AppCompatEditText选择的底线颜色 -->
+        <item name="colorControlActivated">@color/colorWhite</item>
+
+    </style>
+
+    <style name="popwindow_anim_style">
+        <item name="android:windowEnterAnimation">@anim/popwindow_show_anim</item>
+        <item name="android:windowExitAnimation">@anim/popwindow_hide_anim</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!-- ToolBar菜单样式 -->
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="actionMenuTextColor">@color/messageTitle</item> <!--  敲定颜色-->
+        <item name="colorControlNormal">@color/messageTitle</item>
+    </style>
+
+
+    <style name="line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#CDCDCD</item>
+        <item name="android:layout_margin">2dp</item>
+    </style>
+
+
+
+
+    <!-- toolbar弹出菜单样式 -->
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:colorBackground">@android:color/white</item><!--color/colorBottomBar-->
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+        <item name="actionMenuTextColor">@color/messageTitle</item> <!--颜色-->
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="android:textColor">@color/colorBlack</item>
+    </style>
+
+    <!--修改Toolbar popup menu 弹出位置-->
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
+    </style>
+
+    <style name="SwitchButtonStyle">
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+    </style>
+
+    <style name="MyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/messageTitle</item>
+        <item name="colorButtonNormal">@color/colorLightBlue</item>
+    </style>
+
+
+    <style name="BottomDialog.Animation" parent="Animation.AppCompat.Dialog">
+        <item name="android:windowEnterAnimation">@anim/dialog_scale_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/dialog_scale_anim_out</item>
+    </style>
+    <style name="BottomDialog" parent="@style/Base.V7.Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="common_spinner">
+        <!--设置弹窗背景为 系统设置的 应用主色调 在application 的colorPrimay 中配置的颜色, actionBar toolbar 默认使用这个为背景颜色-->
+        <item name="android:popupBackground">?attr/colorPrimary</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <!--设置 spinner 显示位置往下偏移 actionBarSize 的高度, 默认显示是直接显示在 Spinner 的选中项的上方-->
+        <item name="android:dropDownVerticalOffset">?attr/actionBarSize</item>
+        <!--设置选中之后Item 的背景变换 设置背景为 灰色背景色-->
+        <item name="android:dropDownSelector">@color/light_grey</item>
+        <!--设置下拉框的 list 的样式, 主要是设置 分割线, 当然也可以设置下拉的 list 的背景颜色-->
+        <item name="android:dropDownListViewStyle">@style/spinnerListStyle</item>
+        <!--设置显示在 popup 中 item(TextView) 的样式-->
+        <item name="android:dropDownItemStyle">@style/itemSpinnerStyle</item>
+    </style>
+
+    <!--设置分割线-->
+    <style name="spinnerListStyle" parent="@android:style/Widget.ListView.DropDown">
+        <item name="android:divider">#fff</item>
+        <item name="android:dividerHeight">1dp</item>
+    </style>
+
+    <!--设置文本颜色 和大小-->
+    <style name="itemSpinnerStyle" parent="@android:style/Widget.TextView.SpinnerItem">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <color name="light_grey">#d3d3d3</color>
+
+<!-- 更新对话框  -->
+    <style name="Translucent_NoTitle" parent="android:style/Theme.Dialog">
+
+        <item name="android:background">#00000000</item> <!-- 设置自定义布局的背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>  <!-- 设置window背景透明，也就是去边框 -->
+    </style>
+
+
+</resources>

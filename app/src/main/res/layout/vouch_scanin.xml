@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <include android:id="@+id/scan_title"
+        layout="@layout/toolbar"/>
+
+    <Button
+        android:id="@+id/btnScanSumbit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/colorWhite"
+        android:theme="@style/MyButton"
+        android:text="@string/commit"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/scan_title"
+        android:layout_above="@id/btnScanSumbit"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/vouch_code"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="12dp"
+                app:sLeftTextString="@string/vouch_code"
+                app:sRightTextString=""
+                app:sUseRipple="true" />
+
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/vouch_type"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:sLeftTextString="@string/vouch_type"
+                app:sRightIconRes="@mipmap/ic_righticon"
+
+                app:sUseRipple="true"
+                />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/vouch_dep"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:sLeftTextString="@string/vouch_dep"
+                app:sRightIconRes="@mipmap/ic_righticon"
+
+                app:sUseRipple="true"
+                android:layout_marginTop="6dp"
+                />
+            <com.allen.library.SuperTextView
+                android:id="@+id/vouch_user"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:sLeftTextString="@string/vouch_user"
+                app:sRightIconRes="@mipmap/ic_righticon"
+
+                app:sUseRipple="true"
+                />
+            <com.allen.library.SuperTextView
+                android:id="@+id/vouch_data"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                app:sLeftTextString="@string/vouch_data"
+                app:sRightIconRes="@mipmap/ic_righticon"
+
+                app:sUseRipple="true"
+                android:layout_marginTop="6dp"
+                />
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/vouch_maker"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="6dp"
+                app:sLeftTextString="@string/vouch_maker"
+
+                app:sRightIconRes="@mipmap/ic_righticon"
+                app:sUseRipple="true" />
+
+
+            <com.allen.library.SuperTextView
+                android:id="@+id/vouch_items"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                app:sLeftTextString="@string/vouch_items"
+
+                android:layout_gravity="start"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                >
+                <com.allen.library.SuperTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.3"
+                             app:sCenterTextString="行号" />
+                <com.allen.library.SuperTextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    app:sCenterTextString="存货代码" />
+                <com.allen.library.SuperTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:sCenterTextString="存货名称" />
+
+                        <com.allen.library.SuperTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            app:sCenterTextString="存货规格" />
+
+                        <com.allen.library.SuperTextView
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.5"
+                            app:sCenterTextString="存货数量" />
+
+                    </LinearLayout>
+
+            <com.khaki.jxc.view.SlideRecyclerView
+                android:id="@+id/recycle"
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:layout_marginBottom="12dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

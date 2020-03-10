@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <SurfaceView
+        android:layout_gravity="center"
+        android:id="@+id/preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_centerInParent="true" />
+    <wa.android.common.conponets.barcode.view.ViewfinderView
+        android:id="@+id/viewfinder_view"
+        android:background="@color/transparent"
+        android:layout_width="fill_parent"
+
+        android:layout_height="match_parent" />
+    <TextView android:textSize="14.0sp"
+        android:id="@+id/txtResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:textColor="@color/white"
+        android:layout_gravity="right"
+        android:id="@+id/barcode_flashBtn"
+        android:background="@drawable/barcode_flashbtnbg"
+        android:layout_width="@dimen/barcode_flashbt_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/barcode_flashbtmargin_top"
+        android:layout_marginRight="@dimen/barcode_flashbtmargin_right" />
+</FrameLayout>

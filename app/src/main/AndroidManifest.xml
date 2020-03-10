@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.khaki.jxc.client"
+
+     >
+    <!-- 授权访问网络 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!--安卓8.0打开apk安装更新-->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+
+        >
+        <provider
+            android:name="com.khaki.jxc.utils.MyFileProvider"
+            android:authorities="com.khaki.jxc.client.provider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+
+        <activity
+            android:name="com.khaki.jxc.client.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.StartingWindowTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.DOWNLOAD_COMPLETE" />
+            </intent-filter>
+
+            <!--配置下载文件的路径-->
+
+            <meta-data
+
+                android:name="android.support.FILE_PROVIDER_PATHS"
+
+                android:resource="@xml/file_paths" />
+        </activity>
+        <activity android:name="com.khaki.jxc.client.LoginActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity
+            android:name="com.khaki.jxc.activity.AuctionClientActivity"
+            android:label="@string/app_name"></activity>
+        <activity
+            android:name="com.khaki.jxc.client.AddKindActivity"
+            android:label="@string/add_kind_title"></activity>
+        <activity
+            android:name="com.khaki.jxc.client.AddItemActivity"
+            android:label="@string/add_item_title"></activity>
+        <activity
+            android:name="com.khaki.jxc.client.AddBidActivity"
+            android:label="@string/item_detail_title"></activity>
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="a66f5be3c5e49cfb82f86be5cad2b61a">
+
+            <!-- //开发者申请的key -->
+        </meta-data>
+        <activity android:name="com.khaki.jxc.activity.MainActivity" />
+        <activity android:name="com.khaki.jxc.activity.FileListActivity" />
+        <activity android:name="com.khaki.jxc.activity.FileTypeSelectActivity" />
+        <activity android:name="com.khaki.jxc.activity.FMRenameActivity" />
+        <activity android:name="com.khaki.jxc.activity.UploadSelectFileActivity" />
+        <activity android:name="com.khaki.jxc.activity.FieldWorkActivity" />
+        <activity android:name="com.khaki.jxc.activity.FileMoveSelectFileActivity" />
+        <activity android:name="com.khaki.jxc.activity.ChatActivity" />
+        <activity android:name="com.khaki.jxc.activity.vouch_scaninActivity" />
+        <activity android:name="com.khaki.jxc.activity.vouch_scanOutActivity" />
+        <activity android:name="com.khaki.jxc.activity.PU_vouchActivity" />
+        <activity android:name="com.khaki.jxc.activity.SendNoticeActivity" />
+      <!--  <activity
+            android:name="com.khaki.jxc.activity.PersonalContactActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"></activity>
+        <activity
+            android:name="com.khaki.jxc.activity.FriendActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"></activity>-->
+        <activity android:name="com.khaki.jxc.activity.AddFriendActivity"></activity>
+        <activity android:name="com.khaki.jxc.activity.SearchPhoneActivity"></activity>
+        <activity android:name="com.khaki.jxc.activity.EditGroupActivity"></activity>
+        <activity android:name="com.khaki.jxc.activity.SelectMemberActivity"></activity>
+        <activity
+            android:name="com.khaki.jxc.activity.ReportActivity"
+            android:windowSoftInputMode="stateHidden|stateAlwaysHidden"></activity>
+        <activity android:name="com.khaki.jxc.activity.FriendsInfoActivity" />
+        <activity android:name="com.khaki.jxc.activity.GroupInfoActivity" />
+        <activity android:name="com.khaki.jxc.activity.SelectGroupActivity"></activity>
+       <!-- <activity android:name="com.khaki.jxc.activity.ExaminationActivity" />
+        <activity
+            android:name="io.agora.openvcall.ui.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="io.agora.openvcall.ui.ChatActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:parentActivityName="io.agora.openvcall.ui.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name="io.agora.openvcall.ui.SettingsActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/label_settings"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.khaki.jxc.activity.SearchActivity"></activity>-->
+        <receiver android:name="com.khaki.jxc.activity.AuctionClientActivity$UpdateReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REPLACED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <data android:scheme="package"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+
+
+</manifest>

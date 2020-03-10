@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"  >
+    <RelativeLayout android:layout_height="80pt"
+        android:layout_width="match_parent"
+    android:background="@drawable/set_about_icon"
+        android:id="@+id/login_top">
+        <TextView android:textSize="5pt" android:textColor="#ffffffff"
+            android:padding="6.0dip" android:clickable="true" android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_marginTop="10.0dip"
+            android:layout_marginRight="10.0dip" android:text="链接" android:layout_alignParentRight="true" />
+
+        />
+
+
+</RelativeLayout>
+
+    <LinearLayout android:orientation="vertical"
+        android:id="@+id/laout_login_inputarea"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        android:layout_below="@id/login_top">
+    <LinearLayout  android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_name_bg">
+        <ImageView android:id="@+id/image_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:src="@drawable/login_icon_username_initial"
+             />
+        <EditText
+            android:textSize="@dimen/text_size_normal"
+            android:id="@+id/userEditText"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+            android:layout_width="fill_parent" android:layout_height="fill_parent"
+            android:hint="用户" android:singleLine="true"
+            android:inputType="text" />
+    </LinearLayout>
+    <LinearLayout
+        android:background="@drawable/login_pass_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView android:id="@+id/image_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/login_icon_password_initial"
+
+            android:layout_margin="2dp"
+            android:hint="密码"   android:singleLine="true"/>
+
+
+        <EditText
+            android:id="@+id/pwdEditText"
+            android:textSize="@dimen/text_size_normal"
+            android:background="@android:color/transparent"
+            android:paddingLeft="@dimen/abc_dropdownitem_text_padding_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:hint="密码" android:singleLine="true"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right">
+            <CheckBox
+                android:id="@+id/remember_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/bnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:background="@drawable/button_selector"/>
+        </LinearLayout>
+
+    </LinearLayout>
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20.0dip"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <TextView android:textSize="@dimen/text_size_normal"
+                android:textColor="@color/text_light"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="鞍山宝得钢铁有限公司" />
+    </LinearLayout>    <!-- 定义登录、取消按钮的行 -->
+
+<!--    <com.khaki.jxc.widge.CustomVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp" />-->
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
